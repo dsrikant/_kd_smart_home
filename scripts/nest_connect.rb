@@ -9,7 +9,7 @@ NEST_API_URL_TEMP = "https://developer-api.nest.com/devices/thermostats/#{device
 NEST_API_URL_STATUS = "https://developer-api.nest.com/structures/#{structure_id}/away?auth=#{access_token}"
 
 target_temperature_f = '75'
-desired_status = 'away' # Can be home or away
+desired_status = 'away' # Can be home or away 
 
 def get_current_temperature
   response = RestClient.get(NEST_API_URL_TEMP)
